@@ -2,9 +2,9 @@ name: Java CI in serial
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
   workflow_dispatch:
 
 env:
@@ -24,7 +24,7 @@ jobs:
     - name: Set up Node 14
       uses: actions/setup-node@v3
       with:
-       node-version: 14
+        node-version: 14
     - name: install Snyk CLI
       run: npm install -g snyk
     - name: run Snyk Open Source Test
