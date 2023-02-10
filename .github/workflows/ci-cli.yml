@@ -28,7 +28,7 @@ jobs:
     - name: install Snyk CLI
       run: npm install -g snyk
     - name: add api
-      run: snyk auth ${{ secrets.SNYK_TOKEN }}
+      run: snyk auth $SNYK_TOKEN
     - name: run Snyk Open Source Test
       run: snyk test
     - name: run Snyk Code Test
